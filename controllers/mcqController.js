@@ -192,7 +192,7 @@ router.post("/submit_result", async (req, res) => {
       });
   
       // ✅ Forward the request to the result service
-      const targetUrl = "http://localhost:9000/results/post-result";
+      const targetUrl = "https://express-report.onrender.com/results/post-result";
       console.log(`🚀 Sending request to: ${targetUrl}`);
   
       const response = await axios.post(targetUrl, {
